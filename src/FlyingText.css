@@ -1,0 +1,85 @@
+.flying-text {
+  position: fixed;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  animation: flyOutAndDrop 2s cubic-bezier(0.33, 0.27, 0.4, 1);
+  opacity: 0;
+  white-space: nowrap;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flyOutAndDrop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30%) rotate(0deg);
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7f00,
+      #ffff00,
+      #00ff00,
+      #0000ff,
+      #4b0082,
+      #9400d3
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 100%) rotate(720deg);
+    color: #e91e63;
+    background: none;
+  }
+}
+
+@keyframes rainbowColors {
+  0% {
+    color: #391cf4;
+  }
+  16% {
+    color: #ff7f00;
+  }
+  33% {
+    color: #ffff00;
+  }
+  50% {
+    color: #00ff00;
+  }
+  67% {
+    color: #0000ff;
+  }
+  83% {
+    color: #4b0082;
+  }
+  100% {
+    color: #9400d3;
+  }
+}
+
+@keyframes dropOut {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 150%;
+  }
+}
+
+.is-relative {
+  position: relative;
+}
+
+.clear-input-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: transparent;
+}

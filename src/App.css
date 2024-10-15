@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&family=Rubik:wght@500;600&display=swap');
+body {
+  background-color: #f5f7fa;
+  font-family: 'Karla', sans-serif;
+/* font-family: 'Rubik', sans-serif; */
+}
+
+.title {
+  color: #0165D1;
+}
+
+.custom-rounded {
+  border-radius: 10px;
+}
+
+.has-text-primary {
+  color: #0165D1 !important;
+}
+
+.button.is-primary {
+  background-color: #0165D1;
+  border-color: #0165D1;
+}
+
+.button.is-primary:hover {
+  background-color: #0165D1;
+  border-color: #0165D1;
+}
+
+.button.is-success {
+  background-color: #049838;
+  border-color: #049838;
+}
+
+.button.is-success:hover {
+  background-color: #049838;
+  border-color: #049838;
+}
+.table th:not([align]) {
+  text-align: center;
+}
+.title:not(:last-child) {
+  margin-bottom: 0rem;
+}
+
