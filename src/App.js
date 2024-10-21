@@ -65,7 +65,7 @@ function App() {
         let formData = result.form && Array.isArray(result.form) ? result.form : null;
         let dataField = result.data ? JSON.stringify(result.data, null, 2) : "";
 
-        let locustCode = `from locust import HttpUser, task\nimport json\nfrom faker import Faker\nimport random\nimport uuid\n\nclass RequestName(HttpUser):\n    fake = Faker()\n    @task\n    def request_name(self):\n\n        #randomized_data_snippets\n        #name = self.fake.name()\n        #email = "random_email_testing" + str(random.randint(1000, 99999)) + "@yopmail.com"\n        #phone = "+628500002" + str(random.randint(1000, 99999))\n        #nik = "347216181933" + str(random.randint(1000, 9999))\n        #uuid = uuid.uuid4()\n\n        #headers\n        headers = {\n            ${headers}\n        }\n\n`;
+        let locustCode = `from locust import HttpUser, task\nimport json\nfrom faker import Faker\nimport random\nimport uuid\n\nclass RequestName(HttpUser):\n    fake = Faker()\n    @task\n    def request_name(self):\n\n        #randomized_data_snippets\n        #name = self.fake.name()\n        #email = "random_email_testing" + str(random.randint(1000, 99999)) + "@yopmail.com"\n        #phone = "+628500002" + str(random.randint(1000, 99999))\n        #nik = "347216181933" + str(random.randint(1000, 9999))\n        #uuidv4 = str(uuid.uuid4())\n\n        #headers\n        headers = {\n            ${headers}\n        }\n\n`;
 
         if (formData) {
             let formFields = [];
